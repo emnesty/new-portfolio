@@ -1,0 +1,61 @@
+header {
+  .logo {
+    margin-right: 530px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.9rem;
+    color: $gray100;
+  }
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background: linear-gradient(0deg, #050610, #050610), rgba(255, 255, 255, 0.02);
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    width: 100%;
+    max-width: 175px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    li {
+      a {
+        font-weight: 400;
+        transition: background-color 0.3s;
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+        color: $gray100;
+        // &:hover {
+        //   background-color: $primary-default;
+        //   color: #fff;
+        //   border-radius: 8px;
+        // }
+      }
+    }
+  }
+  .translation {
+    span {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 150%;
+      color: $gray100;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    .brazil {
+      display: flex;
+      gap: 8px;
+    }
+    .usa {
+      display: flex;
+      gap: 8px;
+    }
+  }
+}

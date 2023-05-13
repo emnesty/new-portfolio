@@ -1,0 +1,92 @@
+.tag__skills {
+  //   display: inline-flex;
+  width: 100%;
+  display: flex;
+  max-width: 25rem;
+  height: 5.6rem;
+  border: 0.1rem solid $gray100;
+  padding: 1.2rem 1.6rem;
+  border-radius: 10rem;
+  align-items: center;
+  .icon__skill {
+    width: 100%;
+    max-width: 32px;
+    height: 32px;
+    background-color: $primary-default;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10rem;
+    img {
+      width: 100%;
+      max-width: 24px;
+      height: 24px;
+    }
+  }
+  span {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 0.8rem;
+    font-size: 1.4rem;
+    color: $gray900;
+  }
+}
+
+.tag__skills2 {
+  //   display: inline-flex;
+  width: 100%;
+  display: flex;
+  max-width: 12rem;
+  height: 5.6rem;
+  border: 0.1rem solid $gray100;
+  padding: 1.2rem 1.6rem;
+  border-radius: 10rem;
+  align-items: center;
+  .icon__skill {
+    width: 100%;
+    max-width: 32px;
+    height: 32px;
+    background-color: $primary-default;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10rem;
+    img {
+      width: 100%;
+      max-width: 24px;
+      height: 24px;
+    }
+  }
+  span {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 0.8rem;
+    font-size: 1.4rem;
+    color: $gray900;
+  }
+}
+
+.cards {
+  width: 100%;
+  max-width: 38.4rem;
+  height: 20.8rem;
+  background-color: $gray100;
+  padding: 3.2rem;
+  border-radius: 0.8rem;
+  h1 {
+    margin-top: 1.6rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 120%;
+    color: $gray900;
+  }
+  p {
+    margin-top: 1.6rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: $gray600;
+  }
+}
