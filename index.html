@@ -7,8 +7,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/plugins.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Portfolio - Luciano</title>
@@ -182,14 +182,14 @@
         <div class="cards__content">
           <div class="cards">
             <div class="cards__icon">
-              <img src="./img/monitor-code-big.svg" alt="" />
+              <img src="./img/css3-simple (1).svg" alt="" />
             </div>
             <h1>CSS / SASS</h1>
             <p>Habilidades consistentes utilizando CSS e seu pré processador SASS</p>
           </div>
           <div class="cards">
             <div class="cards__icon">
-              <img src="./img/code-big.svg" alt="" />
+              <img src="./img/html5 (1).svg" alt="" />
             </div>
             <h1>HTML</h1>
             <p>HTML5 semântico e bem estruturado em todo projeto</p>
@@ -271,35 +271,92 @@
 
     <section class="my__cases">
       <div class="container">
-         <div class="top">
-            <h1>Meus Cases</h1>
-            <span>2021 - 2023</span>
-         </div>
-         <div class="slide__cards">
-            <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="card__cases">
-                        <img src="./img/case.png" alt="" />
-                        <div class="text__area">
-                          <h2>Nome do projeto</h2>
-                          <p>
-                              Donec non sodales lorem, eu mattis dolor. Proin id fringilla odio, in aliquet ante. Phasellus
-                              scelerisque euismod lacus eget luctus. Phasellus sed erat iaculis, luctus massa in, aliquam
-                              arcu
-                          </p>
-
-                          <a href="#">VER PROJETO</a>
-                        </div>
+        <div class="top">
+          <h1>Meus Cases</h1>
+          <span>2021 - 2023</span>
+        </div>
+        <!-- Slider main container -->
+        <div class="slide__cards">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card__cases">
+                <div class="image">
+                  <img src="./img/blizzard-thumb.png" alt="" />
+                </div>
+                <div class="text__area">
+                  <h2>Blizzard Landing Page</h2>
+                  <div class="skills2">
+                    <div class="tag__skills2">
+                      <div class="icon__skill">
+                        <img src="./img/html5.svg" alt="" />
+                      </div>
+                      <span>HTML5</span>
+                    </div>
+                    <div class="tag__skills2">
+                      <div class="icon__skill">
+                        <img src="./img/css3-simple.svg" alt="" />
+                      </div>
+                      <span>SASS</span>
+                    </div>
+                    <div class="tag__skills2">
+                      <div class="icon__skill">
+                        <img src="./img/javascript-line.svg" alt="" />
+                      </div>
+                      <span>JS</span>
                     </div>
                   </div>
-                  <div class="swiper-pagination"></div>
+                  <p>
+                    Projeto desenvolvido durante o cu codeboost, com esse projeto pude aprimorar ainda mais
+                    meus conheciments em CSS/SASS e HTML Semantico, além disso estou cada vez mais utilizando
+                    JS nos projetos que desenvolvo
+                  </p>
+
+                  <div class="links__externos">
+                    <a href="https://projeto-blizzard-omega.vercel.app/" target="_blank"
+                      >LIVE<img src="./img/external-link-line (2).svg" alt=""
+                    /></a>
+                    <a href="https://github.com/emnesty/projeto-blizzard" target="_blank"
+                      >GITHUB <img src="./img/external-link-line (2).svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="card__cases">
+                <img src="./img/case.png" alt="" />
+                <div class="text__area">
+                  <h2>Nome do projeto</h2>
+                  <p>
+                    Donec non sodales lorem, eu mattis dolor. Proin id fringilla odio, in aliquet ante.
+                    Phasellus scelerisque euismod lacus eget luctus. Phasellus sed erat iaculis, luctus massa
+                    in, aliquam arcu
+                  </p>
+
+                  <a href="#">VER PROJETO</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-      </div>
-      </div>
-   </section>
+    </section>
+    <!-- AOS LIB ANIMATION -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- SWIPER -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".slide__cards", {
+        slidesPerView: 1,
+        spaceBetween: 32,
+        pagination: {
+          el: ".my__cases .swiper-pagination",
+          clickable: true,
+        },
+      })
+    </script>
   </body>
 </html>

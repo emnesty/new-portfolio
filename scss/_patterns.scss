@@ -34,7 +34,6 @@
 }
 
 .tag__skills2 {
-  //   display: inline-flex;
   width: 100%;
   display: flex;
   max-width: 12rem;
@@ -68,7 +67,22 @@
   }
 }
 
+.links__externos {
+  display: flex;
+  gap: 64px;
+  a {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+}
+
 .cards {
+  .cards__icon {
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+  }
   width: 100%;
   max-width: 38.4rem;
   height: 20.8rem;
